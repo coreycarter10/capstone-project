@@ -49,7 +49,7 @@ header {
     display: flex;
     display: inline-block;
     align-items: center;
-    background-color: gray;
+    background-color: #262626;
     margin: 0 auto;
     padding: 0 auto;
     width: 100%;
@@ -89,7 +89,7 @@ nav a {
 }
 
 nav a:hover {
-    color: green;
+    color: #2E8E47;
 }
 
 nav a::before {
@@ -97,7 +97,7 @@ nav a::before {
     display: block;
     height: 5px;
     width: 100%;
-    background-color: green;
+    background-color: #2E8E47;
     position: absolute;
     top: 0;
     width: 0%;
@@ -111,7 +111,7 @@ nav a:hover::before {
 
 #aboutdiv {
     position: center;
-    background-color: green;
+    background-color: #2E8E47;
     height: 50vh;
     width: 50vw;
     margin-left: 25vw;
@@ -126,12 +126,102 @@ footer {
     background: gray;
 }
 
+#footerLeft {
+    float: left;
+    margin-top: 25px;
+    margin-left: 20vw;
+}
+
+#footerRight {
+    float: right;
+    margin-top: 25px;
+    margin-right: 20vw;
+}
+
 #memberH2 {
     position: center;
     margin-left: 45vw;
     margin-top: 10px;
 }
 
+#galleryH2 {
+    position: center;
+    margin-left: 45vw;
+    margin-top: 10px;
+}
+
+#plansH2 {
+    position: center;
+    margin-left: 45vw;
+    margin-top: 10px;
+}
+
+#membershipsH2 {
+    position: center;
+    margin-left: 35vw;
+    margin-top: 30px;
+}
+
 #aboutList {
     columns: 2;
+    margin-left: 10vw;
+}
+
+#aboutP {
+    margin-left: 7vw;
+}
+
+#termsPage {
+    background-color: #262626;
+    color: #FCFCFC;
+}
+
+#contactInfoDiv {
+    margin-top: 0;
+    margin-bottom: 0;
+    background-color: #262626;
+    color: #FCFCFC;
+    height: 79vh;
+}
+
+#infoTop {
+    float: center;
+    display: block;
+    justify-content: center;
+}
+
+#infoBottom {
+    float: center;
+    display: flex;
+    justify-content: center;
+}
+
+#membershipOptionsBackground {
+    position: center;
+    background-color: #2E8E47;
+    height: 50vh;
+    width: 75vw;
+    margin-left: 12vw;
+    margin-top: 10vh;
+}
+
+#homeBackgroundImage {
+    max-width: 100%;
+    position: relative;
+}
+
+#homeBackground {
+   object-fit: contain;
+   max-height: 100%;
+   max-width: 100%;    
+   display: block;
+   margin: auto auto;
+   overflow: hidden;
+}
+
+#homeTextDiv {
+    position: absolute;
+    bottom: 68vh;
+    left: 20vh;
+    color: #000000;
 }
