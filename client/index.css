@@ -215,7 +215,7 @@ footer {
 #homeLogo {
     max-height: 400px;
     max-width: 800px;
-    margin-bottom: 40vh;
+    margin-bottom: 20vh;
 }
 
 #homeBackgroundImage { 
@@ -250,7 +250,8 @@ footer {
 } */
 
 #homeTextDiv {
-    color: #000000;
+    color: #FCFCFC;
+    margin-bottom: 33vh;
 }
 
 #loginpagecontent {
@@ -284,3 +285,36 @@ footer {
 .H2 {
     font-size: xx-large;
 }
+
+#bookingDiv {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#bookSession {
+    background-color: #2E8E47;
+}
+
+#selectDay {
+    font-size: x-large;
+}
+
+#openP {
+    font-size: x-large;
+}
+
+#sessionTimeP {
+    font-size: x-large;
+}
+
+/* #sessionDate {
+    background-color: #2E8E47;
+}
+
+#sessionTime {
+    background-color: #2E8E47;
+    color: black;
+} */

@@ -27,14 +27,14 @@
         </div>
     </header>
     <div id = "bookingDiv">
-        <label for="start">Select day:</label>
+        <label id = "selectDay"for="start">Select day:</label>
 
     <input type="date" id="sessionDate" name="trip-start"
        value="2021-01-01"
        min="2021-01-01" max="2021-1-31">
 
-       <label for="appt-time">Choose a session time: </label>
-  <input id="sessionTime" list="times" type="time" name="appt-time" value="00:00" step="3600">
+       <label id = "sessionTimeP" for="appt-time">Choose a session time: </label>
+    <input id="sessionTime" list="times" type="time" name="appt-time" value="00:00" step="3600">
 
 <datalist id="times">
     <option value="00:00:00">
@@ -63,7 +63,7 @@
     <option value="23:00:00">
 </datalist>
 
-    <small>Open 24 hours per day!</small>
+    <p id = "openP">Open 24 hours per day!</p>
     <button id = 'bookSession'>Book session!</button>
     </div>
 
