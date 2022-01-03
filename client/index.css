@@ -225,3 +225,15 @@ footer {
     left: 20vh;
     color: #000000;
 }
+
+#loginpagecontent {
+    max-width: 500px;
+    margin: auto;
+}
+
+.mapouter {
+    position:relative;
+    text-align:right;
+    height:500px;
+    width:600px;
+}

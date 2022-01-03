@@ -29,23 +29,22 @@
     <div id = "loginpagecontent">
         <form action="" style="border:1px solid #ccc">
             <div class="container">
-              <h1>Sign Up</h1>
               <p>Please fill in this form to create an account.</p>
 
               <label for="firstName"><b>First name</b></label>
-              <input type="text" placeholder="First name" name="first-name" required>
+              <input id = "firstName" type="text" placeholder="First name" name="first-name" required>
 
               <label for="lastName"><b>Last name</b></label>
-              <input type="text" placeholder="Last name" name="last-name" required>
+              <input id = "lastName" type="text" placeholder="Last name" name="last-name" required>
 
               <label for="phoneNumber"><b>Phone number</b></label>
-              <input type="text" placeholder="Phone number" name="phoneNumber" required>
+              <input id = "phoneNumber"type="text" placeholder="Phone number" name="phoneNumber" required>
           
               <label for="email"><b>Email</b></label>
-              <input type="text" placeholder="Email" name="email" required>
+              <input id = "email"type="text" placeholder="Email" name="email" required>
           
               <label for="password"><b>Password</b></label>
-              <input type="password" placeholder="Password" name="psw" required>
+              <input id = "password"type="password" placeholder="Password" name="psw" required>
           
               <label>
                 <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
@@ -55,7 +54,16 @@
           
               <div class="clearfix">
                 <button type="button" class="cancelbtn">Cancel</button>
-                <button type="submit" class="signupbtn">Sign Up</button>
+                <button type="submit" id="signupbtn">Sign Up</button>
+              </div>
+              <div>
+                  <p>Already have an account?</p>
+                  <button type = "submit" id = "loginButton">Login</button>
+                  <label for="email"><b>Email</b></label>
+                  <input id = "loginEmail"type="text" placeholder="Email" name="email" required>
+              
+                  <label for="password"><b>Password</b></label>
+                  <input id = "loginPassword"type="password" placeholder="Password" name="psw" required>
               </div>
             </div>
           </form>
@@ -74,5 +82,7 @@
           </ul>
       </div>  
   </footer>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="./index.js"></script>
 </body>
 </html>
