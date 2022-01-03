@@ -296,6 +296,8 @@ footer {
 
 #bookSession {
     background-color: #2E8E47;
+    height: 5vh;
+    border-radius: 10%;
 }
 
 #selectDay {
