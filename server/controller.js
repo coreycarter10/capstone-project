@@ -2,9 +2,30 @@ const bcrypt = require('bcryptjs');
 
 const users = [];
 
+const bookings = [];
+
+const plans = [
+    {
+        id: 1,
+        text: "Month to month"
+    },
+    {
+        id: 2,
+        text: "Six month membership"
+    },
+    {
+        id: 3,
+        text: "Twelve month membership"
+    }
+]
+
 module.exports = {
+    getPlans: async (req, res) => {
+        res.status(200).send(plans);
+    },
+
     createAccount: async (req, res) => {
-        console.log('hello')
+        
         const {firstName, lastName, email, phoneNumber, password} = req.body;
     
         let salt = bcrypt.genSaltSync(10);
@@ -28,13 +49,25 @@ module.exports = {
         const {email, password} = req.body;
 
         const [user] = users.filter(element => element.email === email);
-        console.log(user)
-        if (!user) return res.status(401).send('User does not exist');
+        
+        if (!user) return res.status(401).send('Invalid email or password');
 
         const validPassword = bcrypt.compare(password, user.passwordHash);
 
-        if (!validPassword) return res.status(401).send('Invalid password');
+        if (!validPassword) return res.status(401).send('Invalid email or password');
 
         res.status(200).send(user.email);
+    },
+
+    bookSession: async (req, res) => {
+        const {day, time} = req.body;
+
+        const [booking] = bookings.filter(element => element === `${day, time}`);
+
+        if (booking) return res.status(200).send('Session not available');
+
+        bookings.push(`${day, time}`);
+
+        res.status(200).send('Session booked');
     }
 }

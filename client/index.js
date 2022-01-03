@@ -15,7 +15,12 @@ const createAccount = event => {
         password
     })
     .then(res => {
-        console.log(res.data);
+        alert('Sign up successful');
+        document.getElementById('firstName').value = '';
+        document.getElementById('lastName').value = '';
+        document.getElementById('phoneNumber').value = '';
+        document.getElementById('email').value = '';
+        document.getElementById('password').value = '';
     })
 }
 
@@ -30,7 +35,9 @@ const login = event => {
         password
     })
     .then(res => {
-        console.log(res.data)
+        alert('User logged in');
+        document.getElementById('loginEmail').value = '';
+        document.getElementById('loginPassword').value = '';
     })
 
 }

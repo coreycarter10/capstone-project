@@ -10,8 +10,6 @@
 <body>
     <header>
         <div id = navbar>
-
-            <!-- <img src="../assets/swing_away_logo.png" alt="Swing Away Logo" id = 'logo'> -->
             <nav>
                 <ul>
                     <li><a href="./home.html">HOME</a></li>
@@ -22,30 +20,15 @@
                     <li><a href="./booking.html">BOOK ONLINE</a></li>
                     <li><a href="./terms.html">TERMS & CONDITIONS</a></li>
                     <li><a href="./login.html">LOGIN</a></li>
-                    <!-- <li>
-                        <div class="dropdown">
-                        <button class="dropbtn">Login
-                          <i class="fa fa-caret-down"></i>
-                        </button>
-                        <div class="dropdown-content">
-                          <a href="#">Link 1</a>
-                          <a href="#">Link 2</a>
-                          <a href="#">Link 3</a>
-                        </div>
-                        </div>
-                    </li>        -->
                 </ul>
             </nav>
         </div>
     </header>
-    <h2 id = "plansH2">Limited memberships available, sign up today!</h2>
+    <h2 id = "plansH2" class = "H2">Limited memberships available, sign up today!</h2>
     <div id = "membershipOptionsBackground">
         <h2 id = "membershipsH2">MEMBERSHIP OPTIONS</h2>
-    <div> CARD PLACEHOLDER</div>
-    <div> CARD PLACEHOLDER</div>
-    <div> CARD PLACEHOLDER</div>
-    <div> CARD PLACEHOLDER</div>
-    <div> CARD PLACEHOLDER</div>
+        <button id = "getMemberships">Get Membership Options!</button>
+        <div id ='listcontainer'></div>
     </div>
     
     <footer>
@@ -58,9 +41,11 @@
             <ul id = "footerRight">
                 <li>swingawaygolfstudio@gmail.com</li>
                 <li><a href="./terms.html">Terms and Conditions</a></li>
-                <li>Find us on Instagram!<a href="https://instagram.com/swingawaygolfstudio" target = "blank">INSTAGRAM LOGO PLACEHOLDER</a></li>
+                <li><a href="https://instagram.com/swingawaygolfstudio" target = "blank">Find us on Instagram!</a></li>
             </ul>
         </div>  
     </footer>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="./memberships.js"></script>
 </body>
 </html>
