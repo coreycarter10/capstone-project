@@ -52,7 +52,7 @@ module.exports = {
         
         if (!user) return res.status(401).send('Invalid email or password');
 
-        const validPassword = bcrypt.compare(password, user.passwordHash);
+        const validPassword = bcrypt.compareSync(password, user.passwordHash);
 
         if (!validPassword) return res.status(401).send('Invalid email or password');
 

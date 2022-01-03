@@ -39,7 +39,7 @@ const login = event => {
         document.getElementById('loginEmail').value = '';
         document.getElementById('loginPassword').value = '';
     })
-
+    .catch(err => console.log('Incorrect password'));
 }
 
 const loginButton = document.getElementById('loginButton');
