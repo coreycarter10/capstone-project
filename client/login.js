@@ -35,7 +35,7 @@ const login = event => {
         password
     })
     .then(res => {
-        alert('User logged in');
+        alert('User logged in successfully');
         document.getElementById('loginEmail').value = '';
         document.getElementById('loginPassword').value = '';
     })

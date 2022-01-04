@@ -64,7 +64,7 @@ module.exports = {
 
         const [booking] = bookings.filter(element => element === `${day, time}`);
 
-        if (booking) return res.status(200).send('Session not available');
+        if (booking) return res.status(200).send('Session is already booked');
 
         bookings.push(`${day, time}`);
 
