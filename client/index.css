@@ -38,12 +38,6 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-/* 
-#logo {
-    float: left;
-    size: 25px;
-    size-adjust: 25px;
-} */
 
 header {
     display: flex;
@@ -61,10 +55,6 @@ header::after {
     display: table;
     clear: both;
 }
-
-/* nav {
-    float: right;
-} */
 
 nav ul {
     margin: 0;
@@ -109,7 +99,6 @@ nav a:hover::before {
     width: 100%;
 }
 
-
 #aboutdiv {
     position: center;
     background-color: #2E8E47;
@@ -123,7 +112,7 @@ footer {
     position:absolute;
     bottom: 0;
     width: 100%;
-    height: 12vh;   /* Height of the footer */
+    height: 12vh;  
     background: #262626;
     color: white
 }
@@ -191,19 +180,6 @@ footer {
     justify-content: space-evenly;
 }
 
-
-/* #infoTop {
-    float: center;
-    display: block;
-    justify-content: center;
-}
-
-#infoBottom {
-    float: center;
-    display: flex;
-    justify-content: center;
-} */
-
 #membershipOptionsBackground {
     position: center;
     background-color: #2E8E47;
@@ -241,14 +217,6 @@ footer {
 #homeFooter {
     height: 10%;
 }
-/* #homeBackground {
-   object-fit: contain;
-   max-height: 100%;
-   max-width: 100%;    
-   display: block;
-   margin: auto auto;
-   overflow: hidden;
-} */
 
 #homeTextDiv {
     color: #FCFCFC;
@@ -315,15 +283,6 @@ footer {
 #sessionTimeP {
     font-size: x-large;
 }
-
-/* #sessionDate {
-    background-color: #2E8E47;
-}
-
-#sessionTime {
-    background-color: #2E8E47;
-    color: black;
-} */
 
 #loginButton {
     background-color: #2E8E47;

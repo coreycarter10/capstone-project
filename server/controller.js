@@ -25,7 +25,6 @@ module.exports = {
     },
 
     createAccount: async (req, res) => {
-        
         const {firstName, lastName, email, phoneNumber, password} = req.body;
     
         let salt = bcrypt.genSaltSync(10);
